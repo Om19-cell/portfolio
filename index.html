@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    nav {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2575fc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 1rem;
+      border-left: 5px solid #2575fc;
+      padding-left: 0.5rem;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+      background: white;
+    }
+
+    th {
+      background: #f2f6ff;
+    }
+
+    .progress-bar {
+      background: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar div {
+      height: 20px;
+      background: #04ebb1;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      line-height: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    form label {
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #2575fc;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: #2575fc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #6a11cb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1e1e1e;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Om Mengade</h1>
+  <p>Mechanical Student • Machine Enthusiast • Lifelong Learner</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#courses">Courses</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About</h2>
+        <p>My name is Om Mengade, and I am currently a first-year college student pursuing Mechanical Engineering. I am passionate about working on projects, gaining knowledge from hands-on experience, and implementing it into projects. Through my dedication, curiosity, and drive to learn, I am committed to maximizing my potential and making a positive impact in my chosen field.</p>
+      
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+          <img src="om.jpeg" alt="Om Mengade" style="width: 250px; border-radius: 10px; object-fit: cover;">
+      
+          <div style="flex: 1;">
+      
+            <ul style="list-style: none; padding: 0;">
+              <li><strong>Birthday:</strong> 28 October 2006</li>
+              <li><strong>Age:</strong> 18</li>
+              <li><strong>Website:</strong> www.Om-portfolio.com</li>
+              <li><strong>Phone:</strong> +91 8767586137</li>
+              <li><strong>City:</strong> Pune, India</li>
+              <li><strong>Degree:</strong> Bachelor in Technology (pursuing)</li>
+              <li><strong>Email:</strong> ommengade28@gmail.com</li>
+            </ul>
+      
+            <p style="margin-top: 1rem;">
+              As a first-year college student, I am driven by a passion for Mechanical and a commitment to excellence. 
+              I strive to make the most of my academic journey by actively engaging in both my coursework and extracurricular activities. 
+              Through my leadership skills, initiative, and continuous pursuit of knowledge, I aim to make a positive impact in my chosen field and contribute to the broader community. 
+              I am excited about the opportunities that lie ahead and look forward to the growth and achievements that await me.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B.Tech in Mechanical</td>
+          <td>MITAOE</td>
+          <td>2024 - 2028</td>
+        </tr>
+        <tr>
+          <td>High School</td>
+          <td>SNBP Jr. College</td>
+          <td>2022 - 2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <ul>
+      <li>NASSCOM</li>
+      <li>Cicso Networking</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div>
+      <p>Python</p>
+      <div class="progress-bar"><div style="width: 85%;">85%</div></div>
+
+      <p>HTML</p>
+      <div class="progress-bar"><div style="width: 75%;">75%</div></div>
+
+      <p>CSS</p>
+      <div class="progress-bar"><div style="width: 60%;">60%</div></div>
+
+      <p>Javascript</p>
+      <div class="progress-bar"><div style="width: 30%;">30%</div></div>
+
+      <p>C Language</p>
+      <div class="progress-bar"><div style="width: 60%;">60%</div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li><strong>EV car</strong> – Electric Vehical that runs on batteries.</li>
+      <li><strong>Painting equipment</strong> – A tool for painting the cylindrical objects.</li>
+      <li><strong>Personal Website</strong> – This interactive portfolio built with HTML/CSS.</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Say hello!"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 [Your Name] • Made with 💙</p>
+</footer>
+
+</body>
+</html>
